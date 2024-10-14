@@ -1,24 +1,54 @@
-# react-native-custom-bottom-tabs
+# react-native-bottom-tab-designs
 
-Custom Bottom Tabs
+Custom Bottom Tab Designs
 
 ## Installation
 
 ```sh
-npm install react-native-custom-bottom-tabs
+npm install react-native-bottom-tab-designs
 ```
 
 ## Usage
 
-
 ```js
-import { multiply } from 'react-native-custom-bottom-tabs';
+import BottomTabs from 'react-native-bottom-tab-designs';
 
 // ...
 
-const result = await multiply(3, 7);
-```
+  const [activeTab, setActiveTab] = useState(0);
+   const tabs = [
+    {
+      title: 'Home',
+      icon: require('../assets/favicon.png'),
+    },
+    {
+      title: 'Chat',
+      icon: 'https://cdn-icons-png.flaticon.com/512/5602/5602732.png',
+    },
+    {
+      title: 'Profile',
+      icon: require('../assets/favicon.png'),
+    },
+    {
+      title: 'Notification',
+      icon: 'https://cdn-icons-png.flaticon.com/512/5602/5602732.png',
+    },
+  ];
 
+<BottomTabs
+    
+  design="CircularTab" // design: 'simpleTextTab' | 'simpleTextwithIcon' | 'RectangleTab' | 'ShowActiveTabTitle' | 'HorizontalActiveTab' | 'CircularTab' | 'AnimatedTab';
+  tabs={tabs}
+  activeTab={activeTab}
+  onTabPress={setActiveTab}
+  // containerStyle={{backgroundColor:'white',shadowOpacity:0}}
+  // tabStyle={{backgroundColor:'red'}}
+  activeTabTextStyle={{}}
+  inactiveTabTextStyle={{}}
+  activeIconStyle={{}}
+  inActiveIconStyle={{}}
+/>;
+```
 
 ## Contributing
 
