@@ -1,7 +1,7 @@
 # react-native-bottom-tab-designs
-
+```js
 Custom Bottom Tab Designs
-
+```
 ## Installation
 
 ```sh
@@ -16,22 +16,23 @@ import BottomTabs from 'react-native-bottom-tab-designs';
 // ...
 
   const [activeTab, setActiveTab] = useState(0);
-   const tabs = [
+  const tabs = [
     {
       title: 'Home',
-      icon: require('../assets/favicon.png'),
+      icon: 'https://cdn-icons-png.flaticon.com/128/25/25694.png',
     },
     {
       title: 'Chat',
-      icon: 'https://cdn-icons-png.flaticon.com/512/5602/5602732.png',
+      icon: 'https://cdn-icons-png.flaticon.com/128/2769/2769104.png',
     },
+   
     {
       title: 'Profile',
-      icon: require('../assets/favicon.png'),
+      icon: 'https://cdn-icons-png.flaticon.com/128/3033/3033143.png',
     },
     {
       title: 'Notification',
-      icon: 'https://cdn-icons-png.flaticon.com/512/5602/5602732.png',
+      icon: 'https://cdn-icons-png.flaticon.com/128/3541/3541852.png',
     },
   ];
 
@@ -45,7 +46,10 @@ import BottomTabs from 'react-native-bottom-tab-designs';
   // tabStyle={{backgroundColor:'red'}}
   activeTabTextStyle={{}}
   inactiveTabTextStyle={{}}
-  activeIconStyle={{}}
+      activeIconStyle={{
+          tintColor: Color.white,
+          // transform: [{ rotate: '45deg' }],
+        }}
   inActiveIconStyle={{}}
 />;
 ```

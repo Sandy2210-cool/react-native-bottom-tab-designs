@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  StyleSheet,
-  TouchableOpacity,
-  View
-} from 'react-native';
+import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import Color from '../Utils/Color';
 import { commonStyle } from '../Utils/CommonStyle';
 import type { RectangleTabProps } from '../Utils/Interfaces';
@@ -72,7 +68,6 @@ const RectangleTab: React.FC<RectangleTabProps> = ({
 export default RectangleTab;
 
 const styles = StyleSheet.create({
-
   diamond: {
     width: 35,
     height: 35,
@@ -88,7 +83,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     top: -33,
     backgroundColor: 'white',
-    transform: [{ rotate: '45deg' }],
+    transform: [{ rotate: '315deg' }],
   },
   viewImage: {
     alignItems: 'center',
