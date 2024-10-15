@@ -8,6 +8,12 @@ Custom Bottom Tab Designs
 npm install react-native-bottom-tab-designs
 ```
 
+![Alt text](https://github.com/Sandy2210-cool/react-native-bottom-tab-designs/blob/main/example/assets/circular.png?raw=true)
+
+![Alt text](https://github.com/Sandy2210-cool/react-native-bottom-tab-designs/blob/main/example/assets/rectangle.png?raw=true)
+
+![Alt text](https://github.com/Sandy2210-cool/react-native-bottom-tab-designs/blob/main/example/assets/simpleTextTab.png?raw=true)
+
 ## Usage
 
 ```js
@@ -38,7 +44,7 @@ import BottomTabs from 'react-native-bottom-tab-designs';
 
 <BottomTabs
     
-  design="CircularTab" // design: 'simpleTextTab' | 'simpleTextwithIcon' | 'RectangleTab' | 'ShowActiveTabTitle' | 'HorizontalActiveTab' | 'CircularTab' | 'AnimatedTab';
+  design="AnimatedTab" // design: 'simpleTextTab' | 'simpleTextwithIcon' | 'RectangleTab' | 'ShowActiveTabTitle' | 'HorizontalActiveTab' | 'CircularTab' | 'AnimatedTab';
   tabs={tabs}
   activeTab={activeTab}
   onTabPress={setActiveTab}
@@ -53,6 +59,19 @@ import BottomTabs from 'react-native-bottom-tab-designs';
   inActiveIconStyle={{}}
 />;
 ```
+
+A brief description of your package.
+
+![Alt text](https://github.com/Sandy2210-cool/react-native-bottom-tab-designs/blob/main/example/assets/AnimatedTab.png?raw=true)
+
+![Alt text](https://github.com/Sandy2210-cool/react-native-bottom-tab-designs/blob/main/example/assets/HorizontalActiveTab.png?raw=true)
+
+![Alt text](https://github.com/Sandy2210-cool/react-native-bottom-tab-designs/blob/main/example/assets/ShowActiveTabTitle.png?raw=true)
+
+
+
+
+
 
 ## Contributing
 
